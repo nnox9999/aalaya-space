@@ -11,3 +11,6 @@ Be security-conscious by default. RLS on every Supabase table. All API calls ser
 ## My background
 I'm a data engineer, not a frontend/backend dev. Explain decisions briefly. 
 Don't assume I know React/Next.js patterns — flag anything non-obvious.
+
+## Git
+Always branch from dev. Never commit directly to main.

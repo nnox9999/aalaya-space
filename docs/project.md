@@ -30,7 +30,7 @@ Licence: AGPL v3 + Commons Clause
 | Database / Auth / Realtime | Supabase |
 | Hosting | Vercel |
 | AI moderation | Anthropic Claude API |
-| Avatar | DiceBear|
+| Avatar | DiceBear |
 | Email | Resend |
 
 ---
