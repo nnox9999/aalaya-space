@@ -1,65 +1,89 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-black">
+      {/* Subtle indigo horizon glow */}
+      <div
+        className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2"
+        style={{
+          width: "80%",
+          height: "320px",
+          background:
+            "radial-gradient(ellipse at 50% 100%, rgba(79,70,229,0.25) 0%, transparent 70%)",
+        }}
+      />
+
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center gap-4 pb-40 text-center">
+        <h1
+          className="text-6xl font-light tracking-[0.3em] text-white sm:text-7xl"
+          style={{ fontFamily: "var(--font-geist-sans)" }}
+        >
+          aalaya
+        </h1>
+        <p
+          className="text-sm font-light tracking-[0.5em] uppercase"
+          style={{ color: "rgba(129,140,248,0.7)" }}
+        >
+          coming soon
+        </p>
+      </div>
+
+      {/* Mountain silhouette — sits at the very bottom */}
+      <svg
+        className="absolute bottom-0 left-0 w-full"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <path
+          d="
+            M0,320
+            L0,220
+            L120,160
+            L200,200
+            L320,100
+            L440,180
+            L520,130
+            L620,60
+            L700,110
+            L780,70
+            L860,120
+            L960,50
+            L1060,130
+            L1140,90
+            L1240,160
+            L1340,120
+            L1440,180
+            L1440,320
+            Z
+          "
+          fill="#1e1b4b"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+        {/* Second ridge for depth */}
+        <path
+          d="
+            M0,320
+            L0,270
+            L100,240
+            L200,260
+            L340,200
+            L460,240
+            L560,210
+            L660,230
+            L760,195
+            L860,225
+            L980,200
+            L1100,230
+            L1200,215
+            L1320,245
+            L1440,230
+            L1440,320
+            Z
+          "
+          fill="#0f0a2a"
+        />
+      </svg>
+    </main>
   );
 }
