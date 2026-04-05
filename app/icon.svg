@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- perfect circle -->
+  <circle cx="16" cy="16" r="16" fill="#1e0a4a"/>
+  <!--
+    Equilateral triangle pointing DOWN, inscribed in radius=12, centered at (16,16)
+    Top-left:  (16 - 12*sin60, 16 - 12*cos60) = (5.61, 10)
+    Top-right: (16 + 12*sin60, 16 - 12*cos60) = (26.39, 10)
+    Bottom:    (16, 16 + 12)                   = (16, 28)
+  -->
+  <polygon points="7.3,11 24.7,11 16,26" fill="white"/>
+</svg>
