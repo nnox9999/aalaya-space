@@ -140,3 +140,6 @@ vite.config.ts.timestamp-*
 
 # Local files
 tracker.md
+
+# Local-only design docs
+.claude/docs/
