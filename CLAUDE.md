@@ -17,12 +17,12 @@ Nox. Data engineer, not a frontend/backend dev. Do not assume React/Next.js/Supa
 
 ## Project docs
 
-Full design docs live in docs/. Read them before making architectural decisions.
+Full design docs live in .claude/docs/ (gitignored, local only). Read them before making architectural decisions.
 
-@docs/vision.md
-@docs/ai-function.md
-@docs/privacy-and-data.md
-@docs/technical-implementation.md
+@.claude/docs/vision.md
+@.claude/docs/ai-function.md
+@.claude/docs/privacy-and-data.md
+@.claude/docs/technical-implementation.md
 
 ## Git
 
